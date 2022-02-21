@@ -29,7 +29,7 @@ FactoryFirmwareDriver::FactoryFirmwareDriver(ros::NodeHandle nh, ros::NodeHandle
             serial::stopbits_one, serial::flowcontrol_none)
   , serial_thread_started_(false)
   , serial_thread_run_(true)
-  , frame_id_("imu_link")
+  , frame_id_("base_imu_link")
   , rate_(50)
   , gyro_fsr_(2000)
   , accel_fsr_(16)
